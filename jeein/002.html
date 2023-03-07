@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 만들기</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      ul,
+      ol,
+      li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: #555;
+      }
+      .login_box {
+        padding: 40px 20px;
+        width: 550px;
+        margin: 20px auto;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+      }
+      .button {
+        height: 50px;
+        line-height: 50px;
+        margin: 20px auto;
+        text-align: center;
+        background: purple;
+        color: #fff;
+        border-radius: 20px;
+      }
+      .button > img {
+        margin: auto;
+        vertical-align: middle;
+      }
+      .button > span {
+        line-height: 50px;
+      }
+      .wrap::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+      .wrap ul {
+        overflow: hidden;
+        float: left;
+      }
+      .wrap ul li {
+        float: left;
+      }
+      .wrap ul li:nth-child(2)::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 20px;
+        background: #000;
+        float: left;
+        margin: 0 10px;
+      }
+      .wrap ul li img {
+        vertical-align: middle;
+        float: left;
+        width: 20px;
+        margin-right: 5px;
+      }
+      .wrap .join {
+        float: right;
+      }
+      .wrap .join img {
+        vertical-align: middle;
+        width: 20px;
+        margin-right: 5px;
+      }
+      .wrap span {
+        line-height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login_box">
+      <p>더 편리해진 위니브에 오신 것을 환영합니다.</p>
+      <div class="button">
+        <img src="img/weniv-logo.png" alt="weniv" />
+        <span>로그인</span>
+      </div>
+      <div class="wrap">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="img/icon-lock.png" alt="아이디" />
+              아이디
+            </a>
+          </li>
+          <li><a href="#">비민번호찾기</a></li>
+        </ul>
+        <div class="join">
+          <a href="#"
+            ><img src="img/icon-user.png" alt="회원가입" />
+            회원가입
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

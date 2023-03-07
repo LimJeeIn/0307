@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      header {
+        background: salmon;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      section::after {
+        clear: both;
+        content: "";
+        display: block;
+      }
+      section article {
+        width: calc(70% - 20px);
+        height: 150px;
+        background: lightgreen;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      section aside {
+        width: 30%;
+        height: 150px;
+        background: skyblue;
+        float: left;
+      }
+      footer {
+        background: wheat;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <section>
+      <article>article</article>
+      <aside>aside</aside>
+    </section>
+    <footer>footer</footer>
+  </body>
+</html>
